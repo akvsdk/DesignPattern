@@ -1,20 +1,20 @@
 package com.ling.Builder;
 
-public class negtive_03 {
+public class postive {
     /*=============服务端==========================*/
     interface ComputerBuilder{
-        Computer build();
+        Computer getComputer();
         void setCpu();
         void setGpu();
         void setHd();
         void setRAM();
     }
 
-    static class HighComputerBuilder implements ComputerBuilder{
+    static class HighComputerBuilder implements ComputerBuilder {
         private Computer computer = new Computer();
 
         @Override
-        public Computer build() {
+        public Computer getComputer() {
             return computer;
         }
 
@@ -39,11 +39,11 @@ public class negtive_03 {
         }
     }
 
-    static class High_02ComputerBuilder implements ComputerBuilder{
+    static class High_02ComputerBuilder implements ComputerBuilder {
         private Computer computer = new Computer();
 
         @Override
-        public Computer build() {
+        public Computer getComputer() {
             return computer;
         }
 
@@ -67,21 +67,23 @@ public class negtive_03 {
             computer.setRAM("16G");
         }
     }
+    //指挥者
+    static class Director {
+
+        public Computer build(ComputerBuilder builder){
+            builder.setCpu();
+            builder.setGpu();
+            builder.setRAM();
+            builder.setHd();
+            return builder.getComputer();
+        }
+    }
     /*==============客户端=====================================*/
     public static void main(String[] args) {
-        HighComputerBuilder builder_01 = new HighComputerBuilder();
-        builder_01.setCpu();
-        builder_01.setGpu();
-        builder_01.setHd();
-        builder_01.setRAM();
-        Computer computer_01 =builder_01.build();
+        Director director = new Director();
 
-        High_02ComputerBuilder builder_02 = new High_02ComputerBuilder();
-        builder_02.setCpu();
-        builder_02.setGpu();
-        builder_02.setHd();
-        builder_02.setRAM();
-        Computer computer_02 =builder_02.build();
+        Computer computer_01 =director.build(new HighComputerBuilder());
+        Computer computer_02 =director.build(new High_02ComputerBuilder());
 
         System.out.println(computer_01);
         System.out.println(computer_02);
