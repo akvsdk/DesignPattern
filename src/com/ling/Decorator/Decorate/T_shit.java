@@ -1,6 +1,5 @@
 package com.ling.Decorator.Decorate;
 
-import com.ling.Decorator.Decorate.Decorate;
 import com.ling.Decorator.Suit.Suit;
 
 public class T_shit extends Decorate {
