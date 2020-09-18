@@ -21,7 +21,7 @@ public abstract class Suit {
     @Override
     public String toString() {
         return "Suit{" +
-                "name='" + this.getName() + '\'' +
+                "name='" + this.getName() + '\'' +  //注意这里使用this.getName()
                 "price='" + price() + '\'' +
                 '}';
     }

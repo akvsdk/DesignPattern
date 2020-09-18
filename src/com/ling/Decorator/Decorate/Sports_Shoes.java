@@ -11,7 +11,7 @@ public class Sports_Shoes extends Decorate{
 
     @Override
     public String getName() {
-        return super.getName()+"  +运动鞋";
+        return suit.getName()+"  +运动鞋";
     }
     @Override
     public int price() {

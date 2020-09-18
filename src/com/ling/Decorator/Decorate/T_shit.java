@@ -12,7 +12,7 @@ public class T_shit extends Decorate {
 
     @Override
     public String getName() {
-        return super.getName()+"   +T恤";
+        return suit.getName()+"   +T恤";
     }
 
     @Override

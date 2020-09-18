@@ -10,7 +10,7 @@ public class Jeans extends Decorate{
 
     @Override
     public String getName() {
-        return super.getName()+"   +牛仔裤";
+        return suit.getName()+"   +牛仔裤";
     }
     @Override
     public int price() {

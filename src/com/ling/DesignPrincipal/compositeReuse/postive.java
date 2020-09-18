@@ -6,8 +6,8 @@ import java.util.Set;
 
 public class postive {
     
-    class MySet{
-        private HashSet hashSet;
+    static class MySet{
+        private HashSet hashSet = new HashSet();
 
         private int count = 0;
 
@@ -27,7 +27,7 @@ public class postive {
     }
 
     public static void main(String[] args) {
-        negtive_2.MySet mySet = new negtive_2.MySet();
+        MySet mySet = new MySet();
         mySet.add("111111");
         mySet.add("22222222222222");
         mySet.add("2333");

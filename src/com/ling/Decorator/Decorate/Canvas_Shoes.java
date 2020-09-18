@@ -9,7 +9,7 @@ public class Canvas_Shoes extends Decorate{
 
     @Override
     public String getName() {
-        return super.getName()+"   +帆布鞋";
+        return suit.getName()+"   +帆布鞋";
     }
     @Override
     public int price() {
