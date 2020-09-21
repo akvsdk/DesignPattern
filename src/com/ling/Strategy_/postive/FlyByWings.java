@@ -1,4 +1,4 @@
-package com.ling.Strategy.postive;
+package com.ling.Strategy_.postive;
 
 public class FlyByWings implements  FlyBehavior{
     @Override

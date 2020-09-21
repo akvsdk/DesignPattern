@@ -1,4 +1,4 @@
-package com.ling.Strategy.negtive_02;
+package com.ling.Strategy_.negtive_02;
 
 
 public class negtive_02 {

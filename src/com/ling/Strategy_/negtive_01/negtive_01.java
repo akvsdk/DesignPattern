@@ -1,4 +1,4 @@
-package com.ling.Strategy.negtive_01;
+package com.ling.Strategy_.negtive_01;
 
 public class negtive_01 {
 /*===============客户端========================*/

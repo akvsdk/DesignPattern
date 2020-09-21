@@ -1,4 +1,4 @@
-package com.ling.Strategy.negtive_02;
+package com.ling.Strategy_.negtive_02;
 
 public class RedHeadBird extends Bird implements Flyable{
     @Override

@@ -1,4 +1,4 @@
-package com.ling.Strategy.negtive_01;
+package com.ling.Strategy_.negtive_02;
 
 public abstract  class Bird {
     public abstract void display();
